@@ -3,8 +3,8 @@ class Ppcm < Formula
 
   desc "PCM audio file browser/player with a wizard-style TUI"
   homepage "https://github.com/pihitpihit/ppcm"
-  url "https://github.com/pihitpihit/ppcm/archive/refs/tags/v0.1.1.tar.gz"
-  sha256 "28890b3f930605690845eafb6d580ee4e55917cd73c79f424463f1e7b13f4dcb"
+  url "https://github.com/pihitpihit/ppcm/archive/refs/tags/v0.1.2.tar.gz"
+  sha256 "e5faffdb7de9a9a31b5d27466576b3d0a94bf55b34a59f3c3d46473ad28a83c6"
   license "MIT"
 
   depends_on "python@3.12"
@@ -14,6 +14,6 @@ class Ppcm < Formula
   end
 
   test do
-    assert_match "ppcm 0.1.1", shell_output("#{bin}/ppcm --version")
+    assert_match "ppcm 0.1.2", shell_output("#{bin}/ppcm --version")
   end
 end
